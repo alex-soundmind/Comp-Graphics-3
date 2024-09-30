@@ -12,21 +12,17 @@ class Application(tk.Frame):
 
 
     def create_widgets(self):
-        # Create two frames for the columns
         self.column1 = tk.Frame(self)
         self.column1.pack(side="left")
         self.column2 = tk.Frame(self)
         self.column2.pack(side="left")
 
-        # Segment 1
         self.segment1_label = tk.Label(self.column1)
         self.segment1_label["text"] = "Отрезок 1 (x1 y1 x2 y2):"
         self.segment1_label.pack(side="top")
         self.segment1_entry = tk.Entry(self.column1)
         self.segment1_entry.insert(0, "50 30 200 40")
         self.segment1_entry.pack(side="top")
-
-        # Segment 2
         self.segment2_label = tk.Label(self.column1)
         self.segment2_label["text"] = "Отрезок 2 (x1 y1 x2 y2):"
         self.segment2_label.pack(side="top")
@@ -34,7 +30,6 @@ class Application(tk.Frame):
         self.segment2_entry.insert(0, "100 80 300 40")
         self.segment2_entry.pack(side="top")
 
-        # Segment 3
         self.segment3_label = tk.Label(self.column1)
         self.segment3_label["text"] = "Отрезок 3 (x1 y1 x2 y2):"
         self.segment3_label.pack(side="top")
@@ -42,7 +37,6 @@ class Application(tk.Frame):
         self.segment3_entry.insert(0, "120 120 400 140")
         self.segment3_entry.pack(side="top")
 
-        # Cube position
         self.cube_position_label = tk.Label(self.column1)
         self.cube_position_label["text"] = "Координаты положения куба (x y z):"
         self.cube_position_label.pack(side="top")
@@ -50,7 +44,6 @@ class Application(tk.Frame):
         self.cube_position_entry.insert(0, "200 200 200")
         self.cube_position_entry.pack(side="top")
 
-        # Cube side length
         self.cube_side_length_label = tk.Label(self.column1)
         self.cube_side_length_label["text"] = "Длина стороны куба:"
         self.cube_side_length_label.pack(side="top")
@@ -58,7 +51,6 @@ class Application(tk.Frame):
         self.cube_side_length_entry.insert(0, "50")
         self.cube_side_length_entry.pack(side="top")
 
-        # Scale
         self.scale_label = tk.Label(self.column1)
         self.scale_label["text"] = "Масштабирование (kx ky):"
         self.scale_label.pack(side="top")
@@ -66,7 +58,6 @@ class Application(tk.Frame):
         self.scale_entry.insert(0, "1.3 1.8")
         self.scale_entry.pack(side="top")
 
-        # Translate
         self.translate_label = tk.Label(self.column1)
         self.translate_label["text"] = "Перенос (tx ty):"
         self.translate_label.pack(side="top")
@@ -74,7 +65,6 @@ class Application(tk.Frame):
         self.translate_entry.insert(0, "100 -100")
         self.translate_entry.pack(side="top")
 
-        # Rotate
         self.rotate_label = tk.Label(self.column1)
         self.rotate_label["text"] = "Угол поворота (градусы):"
         self.rotate_label.pack(side="top")
@@ -82,7 +72,6 @@ class Application(tk.Frame):
         self.rotate_entry.insert(0, "45")
         self.rotate_entry.pack(side="top")
 
-        # Image label
         self.image_label = tk.Label(self)
         self.image_label.pack(side="top")
 
